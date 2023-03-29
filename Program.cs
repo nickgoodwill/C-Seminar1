@@ -61,11 +61,18 @@
 //        break;
 //}
 
-Console.Write("Введите целое число: ");
-string firstString = Console.ReadLine();
-int n = Convert.ToInt32(firstString);
+//Console.Write("Введите целое число: ");
+//string firstString = Console.ReadLine();
+//int n = Convert.ToInt32(firstString);
 
-for (int res = -n; res <= n; res++)
-{
-    Console.Write(res); Console.Write(",");   
-}
+//for (int res = -n; res <= n; res++)
+//{
+//    Console.Write(res); Console.Write(",");   
+//}
+
+int res = 0;
+Console.Write("Введите трехзначное число и нажмите клавишу Enter: ");
+int i = int.Parse(Console.ReadLine());
+Console.WriteLine(res = i % 10);
+
+
