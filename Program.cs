@@ -33,30 +33,39 @@
 
 // программа выдает название недели по номеру 3-среда
 
-Console.Write("Введите число от 1 до 7 и нажмите Enter: ");
-string a = Console.ReadLine();
+//Console.Write("Введите число от 1 до 7 и нажмите Enter: ");
+//string a = Console.ReadLine();
 
-switch (a)
+//switch (a)
+//{
+//    case "1":
+//        Console.WriteLine("1 - Понедельник");
+//        break;
+//    case "2":
+//        Console.WriteLine("2 - Вторник");
+//        break;
+//    case "3":
+//        Console.WriteLine("3 - Среда");
+//        break;
+//    case "4":
+//        Console.WriteLine("4 - Четверг");
+//        break;
+//    case "5":
+//        Console.WriteLine("5 - Пятница");
+//        break;
+//    case "6":
+//        Console.WriteLine("5 - Суббота");
+//        break;
+//    case "7":
+//        Console.WriteLine("7 - Воскресенье");
+//        break;
+//}
+
+Console.Write("Введите целое число: ");
+string firstString = Console.ReadLine();
+int n = Convert.ToInt32(firstString);
+
+for (int res = -n; res <= n; res++)
 {
-    case "1":
-        Console.WriteLine("1 - Понедельник");
-        break;
-    case "2":
-        Console.WriteLine("2 - Вторник");
-        break;
-    case "3":
-        Console.WriteLine("3 - Среда");
-        break;
-    case "4":
-        Console.WriteLine("4 - Четверг");
-        break;
-    case "5":
-        Console.WriteLine("5 - Пятница");
-        break;
-    case "6":
-        Console.WriteLine("5 - Суббота");
-        break;
-    case "7":
-        Console.WriteLine("7 - Воскресенье");
-        break;
+    Console.Write(res); Console.Write(",");   
 }
